@@ -1,6 +1,7 @@
 import discord, asyncio
 import datetime
 import openpyxl
+import os
 
 client = discord.Client()
 
@@ -94,5 +95,5 @@ async def on_message(message):
                 await message.channel.send("경고 1회 해제했습니다.")
             break
 
-
-client.run('Njg0NzMxOTgxMjUwMjk3ODU5.Xl-YYg.Eb_9ORMiphSsbUe2cqz84L9iFIM')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_toekn)
